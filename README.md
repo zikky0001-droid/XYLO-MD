@@ -18,7 +18,7 @@
   <a href="https://github.com/DAV-EX/XYLO-MD/fork">
     <img src="https://img.shields.io/badge/🔁 Fork-Repo-blue?style=for-the-badge"/>
   </a>
-  <a href="https://whatsapp.com/channel/0029VarIiQL5a24AU5ZCVV0G" target="_blank">
+  <a href="https://whatsapp.com/channel/0029VbAsXu9G8l58euAhew3f" target="_blank">
     <img src="https://img.shields.io/badge/💬 Join-WhatsApp_Channel-25D366?logo=whatsapp&logoColor=white&style=for-the-badge"/>
   </a>
 </p>
