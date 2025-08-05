@@ -1,25 +1,22 @@
 <h1 align="center">
-  <img src="https://davidxmd-dave-cnd.hf.space/Xylomenu.png" width="200"/><br/>
-  <span style="color:#fff;background:#7a0000;padding:8px 16px;border-radius:8px;font-weight:800;font-size:22px;">
-    ⚔️ XYLO-MD • WhatsApp AI Bot • Hacker Mode 💀
+  <img src="https://davidxmd-dave-cnd.hf.space/Xylomenu.png" width="180"/><br/>
+  <span style="background:#111;color:#fff;padding:6px 12px;border-radius:6px;font-weight:600;">
+    XYLO-MD - WhatsApp AI Bot 🚀
   </span>
 </h1>
 
-<p align="center" style="color:#ccc;">
-  🧠 AI Chat • 🎮 Games • 📦 Downloader • 💬 Chatroom (soon) • 🛠️ 1000+ Commands
-</p>
-
 <p align="center">
+  🔥 200+ Commands • 🤖 AI Chat • 🎮 Games • 📦 Downloader • 💬 Chatroom (soon) • 🛠️ Dev Tools<br/>
   <img src="https://img.shields.io/github/stars/DAV-EX/XYLO-MD?style=social"/>
   <img src="https://img.shields.io/github/forks/DAV-EX/XYLO-MD?style=social"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/DAV-EX/XYLO-MD/stargazers">
-    <img src="https://img.shields.io/badge/⭐ Star-Project-ff4444?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/⭐ Star-Project-yellow?style=for-the-badge"/>
   </a>
   <a href="https://github.com/DAV-EX/XYLO-MD/fork">
-    <img src="https://img.shields.io/badge/🔁 Fork-Repo-b600e0?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/🔁 Fork-Repo-blue?style=for-the-badge"/>
   </a>
   <a href="https://whatsapp.com/channel/0029VarIiQL5a24AU5ZCVV0G" target="_blank">
     <img src="https://img.shields.io/badge/💬 Join-WhatsApp_Channel-25D366?logo=whatsapp&logoColor=white&style=for-the-badge"/>
@@ -28,74 +25,85 @@
 
 ---
 
-## 🧠 Get Your `SESSION_ID`
+## 📌 Overview
 
-<p align="center">
-  <a href="https://dave-sess.onrender.com" target="_blank">
-    <img src="https://img.shields.io/badge/Xbot-Auth-black?style=for-the-badge&logo=vercel&logoColor=red"/>
-  </a>
-  &nbsp;
-  <a href="https://dave-auth.onrender.com" target="_blank">
-    <img src="https://img.shields.io/badge/Dave-Auth-darkred?style=for-the-badge&logo=key&logoColor=white"/>
-  </a>
-</p>
+**XYLO-MD** is a powerful modular WhatsApp bot powered by [DavidX](https://github.com/DAV-EX), featuring:
 
-> Use the session ID to power the bot.
+> 💡 AI chat, media tools, moderation, coin economy, games, dev tools, and more!
 
 ---
 
-## 🚀 Deploy Instantly
+## 🧠 Get Your SESSION ID
 
-<table>
-  <tr>
-    <td align="center"><b>Heroku</b><br/>
-      <a href="https://heroku.com/deploy?template=https://github.com/DAV-EX/XYLO-MD">
-        <img src="https://www.herokucdn.com/deploy/button.svg" width="140"/>
-      </a>
-    </td>
-    <td align="center"><b>Render</b><br/>
-      <a href="https://render.com/deploy?repo=https://github.com/DAV-EX/XYLO-MD">
-        <img src="https://render.com/images/deploy-to-render-button.svg" width="140"/>
-      </a>
-    </td>
-    <td align="center"><b>Railway</b><br/>
-      <a href="https://railway.app/new/template?repository=https://github.com/DAV-EX/XYLO-MD">
-        <img src="https://railway.app/button.svg" width="140"/>
-      </a>
-    </td>
-    <td align="center"><b>Replit</b><br/>
-      <a href="https://replit.com/github/DAV-EX/XYLO-MD">
-        <img src="https://replit.com/badge/github/DAV-EX/XYLO-MD" width="140"/>
-      </a>
-    </td>
-    <td align="center"><b>Hugging Face</b><br/>
-      <a href="https://huggingface.co/spaces">
-        <img src="https://img.shields.io/badge/HF-Deployer-darkred?style=for-the-badge" width="140"/>
-      </a>
-    </td>
-  </tr>
-</table>
+> You need a valid `SESSION_ID` to run the bot.
+
+- 🔐 [Xbot-auth](https://dave-sess.onrender.com)
+- 🔐 [Dave-auth](https://dave-auth.onrender.com)
 
 ---
 
-## 📦 Download ZIP
+## 🚀 One-Click Deploy
+
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+
+  <div align="center">
+    <b>Heroku</b><br/>
+    <a href="https://heroku.com/deploy?template=https://github.com/DAV-EX/XYLO-MD">
+      <img src="https://www.herokucdn.com/deploy/button.svg" width="140"/>
+    </a>
+  </div>
+
+  <div align="center">
+    <b>Render</b><br/>
+    <a href="https://render.com/deploy?repo=https://github.com/DAV-EX/XYLO-MD">
+      <img src="https://render.com/images/deploy-to-render-button.svg" width="140"/>
+    </a>
+  </div>
+
+  <div align="center">
+    <b>Railway</b><br/>
+    <a href="https://railway.app/new/template?repository=https://github.com/DAV-EX/XYLO-MD">
+      <img src="https://railway.app/button.svg" width="140"/>
+    </a>
+  </div>
+
+  <div align="center">
+    <b>Replit</b><br/>
+    <a href="https://replit.com/github/DAV-EX/XYLO-MD">
+      <img src="https://replit.com/badge/github/DAV-EX/XYLO-MD" width="140"/>
+    </a>
+  </div>
+
+  <div align="center">
+    <b>Hugging Face</b><br/>
+    <a href="https://huggingface.co/spaces">
+      <img src="https://img.shields.io/badge/HF-Deployer-blue?style=for-the-badge" width="140"/>
+    </a>
+  </div>
+
+</div>
+
+---
+
+## 📥 GUI Panel or Manual Download
+
+> Want to deploy manually or with GUI panel?
 
 <a href="https://github.com/DAV-EX/XYLO-MD/archive/refs/heads/main.zip">
-  <img src="https://img.shields.io/badge/⬇️ Download-ZIP-ff2222?style=for-the-badge" height="40">
+  <img src="https://img.shields.io/badge/⬇️ Download-ZIP-blue?style=for-the-badge" height="40">
 </a>
 
 ---
 
-## 🧪 Manual Setup (Dark Terminal)
+## 🔧 Setup (Manual / VPS / Local Dev)
 
 ```bash
-# 🧠 Clone the repo
 git clone https://github.com/DAV-EX/XYLO-MD
 cd XYLO-MD
 
-# 🔐 Add your session ID
-export SESSION_ID="your_session_here"
+# Set your session manually
+export SESSION_ID="your_session"
 
-# ⚙️ Install and run
+# Or use .env or sessionSafe.json
 npm install
 npm start
