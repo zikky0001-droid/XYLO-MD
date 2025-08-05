@@ -44,11 +44,16 @@ Copy the session and use it during deployment.
 
 ## 🚀 One-Click Deploy
 
-<table>
+ <table>
   <tr>
+    <td align="center"><b>Heroku</b><br/>
+      <a href="https://heroku.com/deploy?template=https://github.com/DAV-EX/XYLO-MD">
+        <img src="https://www.herokucdn.com/deploy/button.svg" width="140"/>
+      </a>
+    </td>
     <td align="center"><b>Render</b><br/>
       <a href="https://render.com/deploy?repo=https://github.com/DAV-EX/XYLO-MD">
-        <img src="https://render.com/images/deploy-to-render-button.svg" width="160"/>
+        <img src="https://render.com/images/deploy-to-render-button.svg" width="140"/>
       </a>
     </td>
     <td align="center"><b>Railway</b><br/>
@@ -64,11 +69,6 @@ Copy the session and use it during deployment.
     <td align="center"><b>Hugging Face</b><br/>
       <a href="https://huggingface.co/spaces">
         <img src="https://img.shields.io/badge/HF-Deployer-blue?style=for-the-badge" width="140"/>
-      </a>
-    </td>
-    <td align="center"><b>Heroku</b><br/>
-      <a href="https://heroku.com/deploy?template=https://github.com/DAV-EX/XYLO-MD">
-        <img src="https://www.herokucdn.com/deploy/button.svg" width="140"/>
       </a>
     </td>
   </tr>
