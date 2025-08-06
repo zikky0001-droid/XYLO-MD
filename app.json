@@ -18,15 +18,6 @@
       "url": "heroku/nodejs"
     }
   ],
-  "scripts": {
-    "postdeploy": "npm install && npm run start"
-  },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "Basic"
-    }
-  },
   "keywords": [
     "whatsapp",
     "bot",
@@ -38,6 +29,6 @@
     "whatsapp-bot"
   ],
   "addons": [],
-  "website": "https://github.com/Mek-d1/XYLO-MD",
+  "website": "https://github.com/DAV-EX/XYLO-MD",
   "success_url": "/"
 }
