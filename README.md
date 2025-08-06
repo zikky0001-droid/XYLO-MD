@@ -37,7 +37,7 @@
 
 > You need a valid `SESSION_ID` to run the bot.
 
-- 🔐 [Xbot-auth](https://dave-sess.onrender.com)
+- 🔐 [Xylo-auth](https://sess1.davex.site)
 - 🔐 [Dave-auth](https://dave-auth.onrender.com)
 
 ---
