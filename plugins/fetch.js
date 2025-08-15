@@ -10,7 +10,7 @@ export default [
     description: 'Fetches a URL and sends it based on content type',
     handler: async ({ msg, Dave, args, quoted, from }) => {
       // Get URL from arguments or quoted text
-      let url = args.split(' ')[1]
+      let url = args
       if (!url && quoted && quoted.text) {
         const match = quoted.text.match(/https?:\/\/[^\s]+/i)
         if (match) url = match[0]
