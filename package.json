@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "concurrently \"node server.js\" \"node index.js\"",
     "dev": "nodemon index.js"
   },
   "keywords": [
@@ -25,6 +25,7 @@
     "awesome-phonenumber": "latest",
     "baileys": "npm:baileys-pro@latest",
     "chartjs-node-canvas": "latest",
+    "concurrently": "^8.2.0",
     "dotenv": "^16.0.0",
     "node-webpmux": "^3.1.0",
     "file-type": "^16.5.3",
