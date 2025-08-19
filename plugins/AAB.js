@@ -20,7 +20,7 @@ async function buildMetaAIQuote() {
     key: {
       remoteJid: "status@broadcast",
       fromMe: false,
-      participant: "0@s.whatsapp.net"
+      participant: "13135550002@s.whatsapp.net"
     },
     message: {
       contactMessage: {
