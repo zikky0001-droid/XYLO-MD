@@ -23,7 +23,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "axios": "^1.6.8",
     "awesome-phonenumber": "latest",
-    "baileys": "npm:baileys-pro@latest",
+    "baileys": "npm:pro-baileys@latest",
     "chartjs-node-canvas": "latest",
     "concurrently": "^8.2.0",
     "dotenv": "^16.0.0",
