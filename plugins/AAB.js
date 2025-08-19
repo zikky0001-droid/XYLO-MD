@@ -29,8 +29,7 @@ async function buildMetaAIQuote() {
 VERSION:3.0
 FN:Meta AI
 TEL;type=CELL;type=VOICE;waid=1234567890:+1 234-567-890
-END:VCARD`,
-        jpegThumbnail: imageBuffer
+END:VCARD`
       }
     }
   }
