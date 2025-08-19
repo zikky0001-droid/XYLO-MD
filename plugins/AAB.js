@@ -38,7 +38,7 @@ END:VCARD`,
 
 export default [
   {
-    name: 'botinfo',
+    name: 'botinf',
     description: 'Get info about the bot',
     category: 'info',
     handler: async ({ msg, Dave, from }) => {
@@ -52,7 +52,7 @@ export default [
   },
 
   {
-    name: 'groupinfo',
+    name: 'groupinf',
     description: 'Get info about the group',
     category: 'info',
     handler: async ({ msg, Dave, from, isGroup, groupMetadata }) => {
@@ -73,7 +73,7 @@ export default [
   },
 
   {
-    name: 'whois',
+    name: 'whoi',
     description: 'Get info about a user',
     alias: ['user'],
     category: 'info',
@@ -121,7 +121,7 @@ export default [
   },
 
   {
-    name: 'admins',
+    name: 'admin',
     description: 'List all admins in the group',
     category: 'info',
     handler: async ({ msg, Dave, from, isGroup, groupMetadata, reply }) => {
