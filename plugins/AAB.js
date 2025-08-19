@@ -24,7 +24,7 @@ async function buildMetaAIQuote() {
     },
     message: {
       contactMessage: {
-        displayName: "Meta AI ✅",
+        displayName: "DaveTech",
         vcard: `BEGIN:VCARD
 VERSION:3.0
 FN:Meta AI
