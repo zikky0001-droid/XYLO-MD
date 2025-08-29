@@ -9,8 +9,8 @@
     "mongodb_uri": "mongodb+srv://bluekenny619:JqtCoC4pnRMu6dNK@cluster0.tqepbsr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     "bot_name": "Xylo-MD",
     "footer": "© Powered by DavidX",
-    "autoview_status": false,
-    "autolike_status": false,
+    "autoview_status": true,
+    "autolike_status": true,
     "antidelete_mode": "off",
     "ai_state": "{\"IB\":\"false\",\"GC\":\"false\"}"
   }
