@@ -1,28 +1,37 @@
 // config.js
-import fs from 'fs'
-import 'dotenv/config'
+import { getConfig } from './lib/configdb.js'
 
-const file = './lib/configdb.json'
-
-function loadRaw() {
-  return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file)) : { config: {} }
+let configCache = {
+  PREFIX: '.',
+  MODE: 'public',
+  CREATOR: '2349133354644@s.whatsapp.net',
+  OWNER_NUMBERS: ['2349133354644'],
+  MONGODB_URI: '',
+  BOT_NAME: 'Xylo-MD',
+  FOOTER: '© Powered by DavidX',
+  ANTIDELETE_MODE: 'off',
+  AUTOVIEW_STATUS: true,
+  AUTOLIKE_STATUS: true,
+  SESSION_ID: process.env.SESSION_ID || ''
 }
-
-function get(key, fallback) {
-  const db = loadRaw()
-  return db.config?.[key] ?? fallback
+export async function initConfig() {
+  for (const key of Object.keys(configCache)) {
+    const value = await getConfig(key.toLowerCase())
+    if (value !== undefined) {
+      configCache[key] = value
+    }
+  }
 }
-
-export default {
-  get PREFIX() { return get('prefix', '!') },
-  get MODE() { return get('mode', 'public') },
-  get CREATOR() { return get('creator', '2349133354644@s.whatsapp.net') },
-  get OWNER_NUMBERS() { return get('owner_numbers', ['2349133354644']) },
-  get MONGODB_URI() { return get('mongodb_uri', '') },
-  get BOT_NAME() { return get('bot_name', 'Xylo-MD') },
-  get FOOTER() { return get('footer', '© Powered by DavidX') },
-  get ANTIDELETE_MODE() { return get('antidelete_mode', 'off') },
-  get AUTOVIEW_STATUS() { return get('autoview_status', false) },
-  get AUTOLIKE_STATUS() { return get('autolike_status', false) },
-  get SESSION_ID() { return process.env.SESSION_ID || '' }
+export function updateCache(key, value) {
+  const upperKey = key.toUpperCase()
+  if (configCache.hasOwnProperty(upperKey)) {
+    configCache[upperKey] = value
+  }
 }
+const config = new Proxy(configCache, {
+  set() {
+    throw new Error('Direct assignment not allowed. Use setConfig().')
+  }
+})
+
+export default config
