@@ -1,8 +1,8 @@
 // config.js
-import { getConfig } from './lib/configdb.js'
+import { getConfig, persistDefault } from './lib/configdb.js'
 
-let configCache = {
-  PREFIX: '.',
+const defaults = {
+  PREFIX: '!',
   MODE: 'public',
   CREATOR: '2349133354644@s.whatsapp.net',
   OWNER_NUMBERS: ['2349133354644'],
@@ -10,28 +10,43 @@ let configCache = {
   BOT_NAME: 'Xylo-MD',
   FOOTER: '© Powered by DavidX',
   ANTIDELETE_MODE: 'off',
-  AUTOVIEW_STATUS: true,
-  AUTOLIKE_STATUS: true,
-  SESSION_ID: process.env.SESSION_ID || ''
+  AUTOVIEW_STATUS: false,
+  AUTOLIKE_STATUS: false
 }
-export async function initConfig() {
-  for (const key of Object.keys(configCache)) {
-    const value = await getConfig(key.toLowerCase())
-    if (value !== undefined) {
-      configCache[key] = value
+
+let cache = {
+  SESSION_ID: process.env.SESSION_ID || '' 
+}
+
+async function initConfig() {
+  for (const [key, defValue] of Object.entries(defaults)) {
+    let value = await getConfig(key.toLowerCase())
+    if (value === undefined) {
+      value = defValue
+      await persistDefault(key, value)
+      console.log(`[Config] ${key} = ${value} (default → saved)`)
+    } else {
+      console.log(`[Config] ${key} = ${value} (DB)`)
     }
+    cache[key.toUpperCase()] = value
   }
 }
+
 export function updateCache(key, value) {
-  const upperKey = key.toUpperCase()
-  if (configCache.hasOwnProperty(upperKey)) {
-    configCache[upperKey] = value
-  }
+  cache[key.toUpperCase()] = value
 }
-const config = new Proxy(configCache, {
+
+const config = new Proxy({}, {
+  get(_, prop) {
+    return cache[prop.toUpperCase()]
+  },
   set() {
-    throw new Error('Direct assignment not allowed. Use setConfig().')
+    throw new Error('❌ Use setConfig() to change values, not direct assignment')
   }
 })
 
 export default config
+
+initConfig().catch(err => {
+  console.error("❌ Failed to initialize config:", err)
+})
