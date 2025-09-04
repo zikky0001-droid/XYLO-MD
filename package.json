@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --name XYLO-MD --watch",
+    "start": "pm2-runtime index.js --name XYLO-MD",
     "dev": "nodemon index.js",
     "pm2:logs": "pm2 logs XYLO-MD",
     "pm2:restart": "pm2 restart XYLO-MD",
