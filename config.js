@@ -1,8 +1,7 @@
-// config.js
 import { getConfig, persistDefault } from './lib/configdb.js'
 
 const defaults = {
-  PREFIX: '!',
+  PREFIX: '.',
   MODE: 'public',
   CREATOR: '2349133354644@s.whatsapp.net',
   OWNER_NUMBERS: ['2349133354644'],
@@ -14,9 +13,10 @@ const defaults = {
   AUTOLIKE_STATUS: false
 }
 
-let cache = {
-  SESSION_ID: process.env.SESSION_ID || '' 
-}
+let cache = {}
+
+const SESSION_ID = process.env.SESSION_ID || ''
+cache.SESSION_ID = SESSION_ID 
 
 async function initConfig() {
   for (const [key, defValue] of Object.entries(defaults)) {
@@ -24,9 +24,9 @@ async function initConfig() {
     if (value === undefined) {
       value = defValue
       await persistDefault(key, value)
-      console.log(`[Config] ${key} = ${value} (default → saved)`)
+      console.log(`[Config ✅] ${key} = ${value} (default → saved)`)
     } else {
-      console.log(`[Config] ${key} = ${value} (DB)`)
+      console.log(`[Config ✅] ${key} = ${value} (DB)`)
     }
     cache[key.toUpperCase()] = value
   }
@@ -41,12 +41,12 @@ const config = new Proxy({}, {
     return cache[prop.toUpperCase()]
   },
   set() {
-    throw new Error('❌ Use setConfig() to change values, not direct assignment')
+    throw new Error('Use setConfig() to change values, not direct assignment')
   }
 })
 
 export default config
 
 initConfig().catch(err => {
-  console.error("❌ Failed to initialize config:", err)
+  console.error('🚫 Failed to initialize config:', err)
 })
